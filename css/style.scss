@@ -1,0 +1,201 @@
+nav a{
+  //font-size: 2em !important;
+  font-weight: bold;
+}
+p{
+  padding:0px !important;
+  margin:0px !important;
+}
+section{
+  position: relative;
+  min-height: 100vh;
+}
+.page{
+  position: relative;
+  min-height: 600px;
+}
+.logo{
+  height: 100%;
+  position: relative;
+}
+.pageStart{
+  position: relative;
+  color:white;
+  height: 110vh;
+  margin-top:-64px;
+  //background-image: url('../img/blurredNightCity.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  overflow: hidden;
+  a{
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    right:50%;
+    margin-left:-50%;
+  }
+
+}
+#logo{
+  width: 50%;
+  position: absolute;
+  margin-top:90px;
+  z-index: 1;
+}
+#logoMessage{
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
+  width:100%;
+  position:absolute;
+  bottom: 150px;
+  z-index: 0;
+}
+.pageSpacer{
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+#pillarWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.aboutDesc{
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  margin: 0;
+  p{
+    text-indent: 20px;
+    padding: 10px 0 !important;
+    color: #eee;
+  }
+  .emph{
+    font-weight: bold;
+    color: #fff;
+  }
+  .sm-action{
+    position: absolute;
+    right:80px;
+    bottom:-18px;
+  }
+}
+.pillarIcon{
+  width:100%;
+  text-align: center;
+
+  i{
+    padding:5px;
+    margin-bottom: 15px;
+  }
+}
+.pillarContainer{
+  margin:20px 0;
+  display: inline-block;
+  opacity: 0;
+  width: 300px;
+  h3{
+    width: 90%;
+    line-height: 1.6em;
+    margin: auto;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    @media only screen and (max-width: 600px){
+      text-align: left;
+    }
+  }
+  ul{
+    padding-left: 14px;
+  }
+  li{
+    font-size: 1.4em;
+  }
+  i{
+    padding-right: 5px;
+  }
+
+
+}
+.pillarSlide{
+  opacity: 1;
+  animation-name: pillarSlide;
+  animation-duration: .8s;
+  animation-fill-mode:none;
+  //animation-timing-function: ease;
+}
+@keyframes pillarSlide {
+  from{
+        transform:translate3d(-100px,0,0);
+        opacity: 0;
+      }
+
+  //80%{transform:translateX(20%);}
+  to{
+      transform:translate3d(0,0,0);
+      opacity: 1;
+    }
+}
+
+.projWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-gap: 20px;
+  height: auto;
+  .card{
+    height: 350px;
+    width: 300px;
+    background-color: #00bcd4;
+    .card-image{
+      height: 250px;
+      width: 300px;
+      border:5px solid #00bcd4;
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+
+    }
+    img{
+      height: 300px;
+    }
+    .flow-text{
+      text-indent: 20px;
+      border-left: 1px solid #ccc;
+      margin: 20px !important;
+      padding-left: 10px !important;
+      .emph{
+        font-weight: bold !important;
+      }
+    }
+    .card-title{
+      text-align: center;
+      font-weight: 1.6em !important;
+      font-weight: bold;
+      border-bottom: 1px solid white;
+    }
+    a{
+      color: white;
+    }
+    @media only screen and (max-width: 600px){
+      width: 100%;
+      .card-image{
+        width: 100%;
+      }
+    }
+  }
+}
+
+#contactPage{
+  section{
+    max-width: 700px;
+    padding-top:50px;
+  }
+}
