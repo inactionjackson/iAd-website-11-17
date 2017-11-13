@@ -1,18 +1,10 @@
 nav a{
-  //font-size: 2em !important;
+  font-size: 2em !important;
   font-weight: bold;
-}
-p{
-  padding:0px !important;
-  margin:0px !important;
 }
 section{
   position: relative;
   min-height: 100vh;
-}
-.page{
-  position: relative;
-  min-height: 600px;
 }
 .logo{
   height: 100%;
@@ -23,7 +15,6 @@ section{
   color:white;
   height: 110vh;
   margin-top:-64px;
-  //background-image: url('../img/blurredNightCity.png');
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size:cover;
@@ -31,7 +22,7 @@ section{
   a{
     color: white;
     position: absolute;
-    bottom: 80px;
+    bottom: 12vh;
     right:50%;
     margin-left:-50%;
   }
@@ -49,18 +40,9 @@ section{
   text-align: center;
   width:100%;
   position:absolute;
-  bottom: 150px;
+  bottom: 20vh;
   z-index: 0;
 }
-.pageSpacer{
-  height: 200px;
-  width: 100%;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size:cover;
-}
-
 #pillarWrapper{
   display: flex;
   flex-wrap: wrap;
@@ -127,9 +109,8 @@ section{
 .pillarSlide{
   opacity: 1;
   animation-name: pillarSlide;
-  animation-duration: .8s;
+  animation-duration: .7s;
   animation-fill-mode:none;
-  //animation-timing-function: ease;
 }
 @keyframes pillarSlide {
   from{
@@ -137,7 +118,6 @@ section{
         opacity: 0;
       }
 
-  //80%{transform:translateX(20%);}
   to{
       transform:translate3d(0,0,0);
       opacity: 1;

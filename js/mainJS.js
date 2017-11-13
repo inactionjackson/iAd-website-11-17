@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     if(!staggerPillarsInterval && scrollAmount > $('#aboutPage').offset().top-70){
       staggerPillars();
-      staggerPillarsInterval = window.setInterval(staggerPillars,600);
+      staggerPillarsInterval = window.setInterval(staggerPillars,400);
     }
 
   });
